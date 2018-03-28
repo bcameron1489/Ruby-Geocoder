@@ -19,6 +19,10 @@ class PlacesController < ApplicationController
     else
       render 'new'
     end
+
+    def destroy
+      @place.destroy
+    end
   end
 
   private
